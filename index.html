@@ -12,13 +12,53 @@
     <div class="wrapper">
 
         <!-- inizio header -->
-        <header></header>
+        <header>
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        </header>
         <!-- fine header -->
     
         <!-- inizio main -->
-        <main></main>
+        <main>
+            <!-- container statico -->
+            <div class="container">
+                <section>
+                    <!-- Bottone 1 nome -->
+                    <label for="nome">Nome e Cognome</label>
+                    <input id="nome" type="text" placeholder="Inserisci il tuo nome" name="nome">
+                    <!-- fine Bottone 1 -->
+
+                    <!-- Bottone 2 km -->
+                    <label for="km">Km da percorrere</label>
+                    <input id="km" type="number" placeholder="inserisci i km" name="km">
+                    <!-- fine Bottone 2 -->
+
+                    <!-- Bottone 3 età -->
+                    <label for="eta">Fascia d'età</label>
+                    <select name="eta" id="eta">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                    <!-- fine Bottone 3 -->
+                </section>
+                <section>
+                    <!-- comando 1 -->
+                    <button id="calcola" name="calcola">Genera</button>
+                    <!-- fine comando 1 -->
+
+                    <!-- comando 2 -->
+                    <button id="annulla" name="annulla" >Annulla</button>
+                    <!-- fine comando 2 -->
+                </section>
+            </div>
+
+            <!-- container a comparsa -->
+            <div class="container_2">
+
+            </div>
+        </main>
         <!-- fine main -->
-        
+
     </div>
 
 
