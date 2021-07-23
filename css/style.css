@@ -39,7 +39,7 @@ h1 {
     background-color: #fff;
     border-radius: 20px;
     margin: 0 auto;
-    box-shadow: 0px 0px 1px black;
+    box-shadow: 1px 1px 5px black;
 }
 
 .opzioni{
@@ -59,14 +59,14 @@ h1 {
     border: 2px solid #b91450;
     border-radius: 5px;
     padding: 5px 10px;
-    text-align: center;  /* chiedere perche centra il testo ma non il cursore */
-    outline-style: none;
+    text-align: center;  
 }
 
 .opzioni input:focus,
 .opzioni select:focus {
     background-color: #b91450;
-    color: white; /* chiedere perche prende la 'e' come valore */
+    color: white; 
+    outline-style: none;
 }
 
 .comandi button {
@@ -78,7 +78,7 @@ h1 {
     background-color: #cccccc;
     border-radius: 5px;
     border: 1px solid black;
-    outline-style: none;
+    cursor: pointer;
 }
 
 .comandi button:hover {
@@ -94,6 +94,7 @@ h1 {
     width: 80%;
     margin: 30px auto 0;
 }
+
 #biglietto {
     width: 100%;
     margin: 0 auto;

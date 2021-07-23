@@ -1,8 +1,5 @@
 // Creiamo un finto biglietto del treno con:
 // eta passeggero
-
-
-
 // Categoria selezionata dall'utente
 // Aggiungiamo una piccola animazione al click su "Crea" e "Annulla", se clicchiamo su annulla dobbiamo ripulire il form.
 
@@ -29,20 +26,26 @@ function() {
     
     var km = document.getElementById('km').value;
     var eta = document.getElementById('eta').value;
+
    
     // Prezzo calcolato
     var ticket = (km * 0.21);
+    var offerta = 'Prezzo Standard';
     
     if (eta == 'minorenne')
     {
         ticket = ticket * 0.8;
+        offerta = 'Sconto Minorenne';
     }
     else if (eta == 'over65') 
     {
         ticket = ticket * 0.6;
+        offerta = 'Sconto Over65';
+
     }
     ticket = ticket.toFixed(2);
-    document.getElementById('costo-biglietto').innerHTML = ticket;
+    document.getElementById('costo-biglietto').innerHTML = ticket + '€';
+    document.getElementById('prezzo-standard').innerHTML = offerta;
 }
 )
 
