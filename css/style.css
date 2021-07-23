@@ -8,6 +8,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.flex {
+    display: flex;
+}
+
 .wrapper {
     height: 100vh;
     width: 100%;
@@ -32,11 +36,52 @@ h1 {
     flex-direction: column;
     align-items: center;
     width: 80%;
-    height: 400px;
     background-color: #fff;
     border-radius: 20px;
     margin: 0 auto;
+}
 
+.opzioni{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 50px;
+}
+
+.opzioni label {
+    margin-bottom: 20px;
+    color: #b91450;
+    text-align: center;
+}
+
+.opzioni input,
+.opzioni select {
+    border: 2px solid #b91450;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;  /* chiedere perche centra il testo ma non il cursore */
+    outline-style: none;
+}
+
+.opzioni input:focus,
+.opzioni select:focus {
+    background-color: #b91450;
+    color: white; /* chiedere perche prende la 'e' come valore */
+}
+
+.comandi button {
+    margin: 20px 5px;
+    padding: 5px;
+    color:  #b91450;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #cccccc;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline-style: none;
+}
+
+.comandi button:hover {
+    background-color: #808080;
 }
 /* fine container superiore */
 
@@ -46,7 +91,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     width: 80%;
-    margin: 50px auto 0;
+    margin: 30px auto 0;
 }
 #biglietto {
     width: 100%;
